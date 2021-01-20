@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Главная страница</title>
+    <style>
+    body {
+    background:  #9A6BFF  ;
+    padding: 10px;
+    background-repeat: no-repeat;
+
+    </style>
+</head>
+<body>
+    <div id="header" >
+
+        <h1 align="center">Главная страница</h1>
+    </div>
+    <h3 align="center"><a href = "{% url 'employee' %}">Сотрудники</a></h3>
+    <h3 align="center"><a href = "{% url 'user' %}">Пользователи</a></h3>
+    <h3 align="center"><a href = "{% url 'product' %}">Продукты</a></h3>
+    <h3 align="center"><a href = "{% url 'combine' %}">Комбинаты</a></h3>
+    <h3 align="center"><a href = "{% url 'location' %}">Регионы</a></h3>
+    <h3 align="center"><a href = "{% url 'prices' %}">Цены</a></h3>
+    <h3 align="center"><a href = "{% url 'weekly_prices_update' %}">Еженедельное обновление цен</a></h3>
+    <h3 align="center"><a href="/admin/logout/">Выйти из аккаунта</a></h3>
+
+</body>
+</html>
+
